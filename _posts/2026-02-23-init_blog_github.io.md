@@ -79,9 +79,9 @@ mysite/
 
 **主题**（theme）提供了网站页面的布局和样式，详见官方文档 [Themes](https://jekyllrb.com/docs/themes/)。
 
-可以在 [http://jekyllthemes.org/](http://jekyllthemes.org/) 选择自己喜欢的主题并在线预览。我选择的主题是 [Chirpy](http://jekyllthemes.org/themes/jekyll-theme-chirpy/)，该主题提供了**分类**(category)、**标签**(tag)、目录、语法高亮、数学公式、搜索文章、评论系统等特性，能够满足博客网站的绝大部分需求。
+可以在 <a href="http://jekyllthemes.org/" data-proofer-ignore>http://jekyllthemes.org/</a> 选择自己喜欢的主题并在线预览。我选择的主题是 <a href="http://jekyllthemes.org/themes/jekyll-theme-chirpy/" data-proofer-ignore>Chirpy</a>，该主题提供了**分类**(category)、**标签**(tag)、目录、语法高亮、数学公式、搜索文章、评论系统等特性，能够满足博客网站的绝大部分需求。
 
-除此之外，还有一个 [Textalic](http://jekyllthemes.org/themes/textalic/) 主题也不错，看个人喜好。
+除此之外，还有一个 <a href="http://jekyllthemes.org/themes/textalic/" data-proofer-ignore>Textalic</a> 主题也不错，看个人喜好。
 
 ## 3 搭建个人博客
 
