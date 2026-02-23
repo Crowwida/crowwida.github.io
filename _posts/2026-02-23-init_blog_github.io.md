@@ -17,7 +17,7 @@ Windows 系统上进行安装的组件只需要两个：Ruby 和 Jekyll。
 
 RubyInstaller 的下载网址：<https://rubyinstaller.org/downloads/>，进入网址后寻找 Ruby+Devkit，其实会有 "=>" 符号标记默认推荐版本：
 
-![ruby+devkit](\assets\img\init_blog_github.io\ruby+devkit.png)
+![ruby+devkit](assets\img\init_blog_github.io\ruby+devkit.png)
 
 如果没有特定需求直接选择推荐就好。安装过程全程默认即可，在最后一步勾选 "运行 ridk install"，在接下来弹出的命令行窗口中选择 "3、MSYS2 and MINGW development tool chain"。
 
