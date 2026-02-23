@@ -17,7 +17,7 @@ Windows 系统上进行安装的组件只需要两个：Ruby 和 Jekyll。
 
 RubyInstaller 的下载网址：<https://rubyinstaller.org/downloads/>，进入网址后寻找 Ruby+Devkit，其实会有 "=>" 符号标记默认推荐版本：
 
-![ruby+devkit](assets\img\init_blog_github.io\ruby+devkit.png)
+![ruby+devkit](../assets/images/init_blog_github.io/ruby+devkit.png)
 
 如果没有特定需求直接选择推荐就好。安装过程全程默认即可，在最后一步勾选 "运行 ridk install"，在接下来弹出的命令行窗口中选择 "3、MSYS2 and MINGW development tool chain"。
 
@@ -172,3 +172,99 @@ comments:
 ```
 
 （5）重启 Jekyll 服务器，在文章底部将会看到评论区，使用 GitHub 账号登录即可发表评论。
+
+## 4 撰写博客
+
+要写一篇新的文章，在 _posts 目录下创建一个文件，命名格式为 `YYYY-MM-DD-TITLE.md`（例如 `2023-09-03-hello-world.md`），`TITLE` 部分将作为文章的 URL。
+
+详细配置和语法参考Chirpy文档：
+* [Writing a New Post](https://chirpy.cotes.page/posts/write-a-new-post/)
+* [Text and Typography](https://chirpy.cotes.page/posts/text-and-typography/)
+
+### 4.1 Front Matter
+
+你需要在文章顶部填写 Front Matter 信息：
+
+```yaml
+---
+title: TITLE
+date: YYYY-MM-DD HH:MM:SS +/-TTTT
+categories: [TOP_CATEGORIE, SUB_CATEGORIE]
+tags: [TAG]
+---
+```
+
+其中，`title` 将展示为文章标题（不必与文件名的 `TITLE` 部分相同），`date` 将展示为文章创建时间（时区写 `+0800`）。
+
+之后是正文内容。
+
+### 4.2 分类和标签
+
+`categories` 是文章的分类，支持至多两级分类。`tags` 是文章的标签，可以有任意多个。例如：
+
+```yaml
+---
+categories: [Animal, Insect]
+tags: [bee]
+---
+```
+
+### 4.3 目录
+
+默认情况下，目录将会自动生成并展示在文章右侧。如果想全局关闭，则将 _config.yml 中的 `toc` 变量设置为 `false`。如果想对一篇特定的文章关闭，则在 Front Matter 中添加：
+
+```yaml
+---
+toc: false
+---
+```
+
+> 注意：Chirpy 生成的目录只显示二级标题和三级标题，一级标题不会显示在目录中。参考 [issue #491](https://github.com/cotes2020/jekyll-theme-chirpy/issues/491#issuecomment-1015659620)。
+
+## 5 升级版本
+
+可以按照以下步骤升级 Chirpy 主题版本。假设从 v6.4.2 升级到 v7.2.4。
+
+1、 参照 [chirpy-starter/Gemfile](https://github.com/cotes2020/chirpy-starter/blob/v7.2.4/Gemfile) 更新 Gemfile 中的依赖版本。
+
+![update-dependency-version](../assets/images/init_blog_github.io/update-dependency-version.png)
+
+注：Chirpy v7.3.0 有 bug，会导致搜索功能失效，参见：[cotes2020/jekyll-theme-chirpy #2416](https://github.com/cotes2020/jekyll-theme-chirpy/issues/2416)。Gemfile 中的 `~> 7.2` 表示 `>= 7.2, < 8.0`，会安装当前最新版本 v7.3.0。要使用 v7.2.4，直接指定版本号：
+
+```
+gem "jekyll-theme-chirpy", "7.2.4"
+```
+
+2、 安装新版本依赖，在根目录中执行以下命令：
+
+```shell
+bundle
+```
+
+3、 参照 [jekyll-theme-chirpy/assets](https://github.com/cotes2020/jekyll-theme-chirpy/tree/v7.2.4/assets) 更新 assets/lib 子模块。
+
+![update-submodule](../assets/images/init_blog_github.io/update-submodule.png)
+
+```shell
+cd assets/lib
+git fetch origin main
+git reset --hard b9e18a1
+```
+
+4、 参照 [chirpy-starter/_config.yml](https://github.com/cotes2020/chirpy-starter/blob/v7.2.4/_config.yml) 更新配置文件 _config.yml。
+
+新版本可能修改了某些配置项的名字。例如，评论系统配置由 `comments.active` 变为 `comments.provider`，使用旧的名字会导致评论系统无法显示。完整 diff 列表参见 [v6.4.2...v7.2.4](https://github.com/cotes2020/chirpy-starter/compare/v6.4.2...v7.2.4)。
+
+5、测试新版本，在根目录中执行以下命令：
+
+```shell
+bundle exec jekyll serve
+```
+
+查看样式显示、目录、搜索、评论区等功能是否正常。如果某项功能不正常，尝试清除浏览器缓存。
+
+6、提交更新。
+
+参考commit：
+* [升级 Chirpy 版本](https://github.com/ZZy979/zzy979.github.io/commit/f6fb9a6be37d312a8464cb117b8ba1b1db8dabb6)
+* [更新配置文件](https://github.com/ZZy979/zzy979.github.io/commit/526a7781a3e205556fca501860b4d6b8763af7e7)
