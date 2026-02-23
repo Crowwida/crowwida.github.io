@@ -137,6 +137,8 @@ bundle exec jekyll serve
 
 > 可选：我本人拥有个人域名，在阿里云购买的。在使用自定义域名的时候，在 "pages" 中 "Custom domain" 中输入自己的域名。在域名解析服务商处进行外网解析，记录值使用 Github 提供的 IP 地址：185.199.108.153、185.199.109.153、185.199.110.153、185.199.111.153。
 
+![github-pages-ip](../assets/images/init_blog_github.io/github-pages-ip.png)
+
 提交本地修改并推送至远程仓库，将会触发 Actions 工作流。在仓库的 Actions 标签页将会看到 "Build and Deploy" 工作流正在运行。构建成功后，即可通过配置的 URL 访问自己的博客网站。
 
 ### 3.6 评论系统
