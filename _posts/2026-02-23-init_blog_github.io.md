@@ -231,7 +231,7 @@ toc: false
 
 注：Chirpy v7.3.0 有 bug，会导致搜索功能失效，参见：[cotes2020/jekyll-theme-chirpy #2416](https://github.com/cotes2020/jekyll-theme-chirpy/issues/2416)。Gemfile 中的 `~> 7.2` 表示 `>= 7.2, < 8.0`，会安装当前最新版本 v7.3.0。要使用 v7.2.4，直接指定版本号：
 
-```
+```shell
 gem "jekyll-theme-chirpy", "7.2.4"
 ```
 
