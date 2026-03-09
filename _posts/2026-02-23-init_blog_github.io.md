@@ -1,7 +1,7 @@
 ---
 title: 利用 github.io 搭建个人博客
 date: 2026-02-23 19:45:00 +0800
-categories: [技术, 博客搭建]
+categories: [建网站, 博客]
 tags: [博客, blog]
 ---
 

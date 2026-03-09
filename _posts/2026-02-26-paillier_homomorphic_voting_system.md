@@ -1,7 +1,7 @@
 ---
 title: 基于 Paillier 同态加密的投票系统
 date: 2026-02-26 15:40:00 +0800
-categories: [杂谈, 密码学]
+categories: [密码学, 加密]
 tags: [加密, 解密, 同态, 投票, paillier, 密码学]
 
 math: true

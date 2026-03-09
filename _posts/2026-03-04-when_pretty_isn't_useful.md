@@ -1,7 +1,7 @@
 ---
 title: 现代文生图模型能否作为可靠的训练数据生成工具
 date: 2026-03-09 19:13:00 +0800
-categories: [科研, T2I]
+categories: [文生图]
 tags: [t2i, 文生图, 多样性, diversity]
 ---
 
