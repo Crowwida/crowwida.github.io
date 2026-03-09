@@ -4,8 +4,11 @@ date: 2026-03-09 21:00:00 +0800
 categories: [杂谈, 脑科学]
 tags: [睡眠, 睡眠质量, sleep, sleep quality]
 ---
+<div style="text-align: center;">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gbQFSMayJxk?si=2C67fn2iH7b3BkYa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gbQFSMayJxk?si=2C67fn2iH7b3BkYa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+![random_input](/assets/img/random_input.jpg)
 
 ## 1 介绍 Matt Walker 博士
 
