@@ -5,7 +5,8 @@ categories: [脑科学, 睡眠]
 tags: [睡眠, 睡眠质量, sleep, sleep quality]
 ---
 <div style="text-align: center;">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/gbQFSMayJxk?si=2C67fn2iH7b3BkYa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/gbQFSMayJxk?si=2C67fn2iH7b3BkYa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+    <iframe src="https://www.youtube.com/embed/gbQFSMayJxk?si=2C67fn2iH7b3BkYa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
 ![random_input](/assets/img/random_input.jpg)
